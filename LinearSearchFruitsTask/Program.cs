@@ -15,7 +15,19 @@
             // You should use meaningful variable names
 
             Console.WriteLine("What word would you like to find");
-            
+            string userinput = Console.ReadLine();
+            bool found = false;
+            for (int i = 0; i < fruits.Length; i++)
+            {
+                if (fruits[i] == userinput)
+                {
+                    found = true;
+                    break;
+                }
+            }  
+            Console.WriteLine(found);
+           
+
         }
     }
 }
